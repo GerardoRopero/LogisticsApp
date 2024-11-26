@@ -20,7 +20,7 @@ public class Venta implements Serializable {
 	
 	public double getAumento() {
 		setAumento();
-		return aumento;
+		return (double) Math.round(aumento * 100) / 100.0;
 	}
 
 	public void setAumento() {
@@ -38,7 +38,7 @@ public class Venta implements Serializable {
 
 	public double getReduccion() {
 		setReduccion();
-		return reduccion;
+		return (double) Math.round(reduccion * 100) / 100.0;
 	}
 
 	public void setReduccion() {
