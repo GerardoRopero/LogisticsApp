@@ -83,6 +83,7 @@ public class ControladorPerecedero implements ActionListener {
 			perecedero.setNombre(vista.textFNombre.getText());
 	        perecedero.setPrecioBase(Double.valueOf(vista.textFPrecio.getText()));
 	        perecedero.setDiasACaducar(Integer.valueOf((String) vista.comboBDiasACaducar.getSelectedItem()));
+	        perecedero.calcularPrecio();
 			int index = modelo.buscarIndex(perecedero);
 			if (respuesta == JOptionPane.YES_OPTION) {
 				modelo.update(index, perecedero);
@@ -97,4 +98,3 @@ public class ControladorPerecedero implements ActionListener {
 		}
 	}
 }
-
