@@ -28,13 +28,13 @@ public class Perecedero extends Producto implements Serializable {
 	public void calcularPrecio() {
 		switch (diasACaducar) {
 			case 1:
-				this.precioFinal = precioBase / 4.0;
+				this.precioFinal = (double) Math.round((precioBase / 4.0) * 100) / 100.0 ;
 				break;
 			case 2:
-				this.precioFinal = precioBase / 3.0;
+				this.precioFinal = (double) Math.round((precioBase / 3.0) * 100) / 100.0 ;
 				break;
 			case 3:
-				this.precioFinal = precioBase / 2.0;
+				this.precioFinal = (double) Math.round((precioBase / 2.0) * 100) / 100.0;
 				break;
 		}
 	}
