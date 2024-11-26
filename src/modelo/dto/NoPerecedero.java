@@ -29,13 +29,13 @@ public class NoPerecedero extends Producto implements Serializable {
 	public void calcularPrecio() {
 		switch (calidadProducto) {
 			case 1: 
-				this.precioFinal = precioBase + precioBase * (3.0 / 100);
+				this.precioFinal = (double) Math.round((precioBase + precioBase * (3.0 / 100)) * 100) / 100.0;
 				break;
 			case 2:
-				this.precioFinal = precioBase + precioBase * (2.0 / 100);
+				this.precioFinal = (double) Math.round((precioBase + precioBase * (2.0 / 100)) * 100) / 100.0;
 				break;
 			case 3:
-				this.precioFinal = precioBase + precioBase * (1.0 / 100);
+				this.precioFinal = (double) Math.round((precioBase + precioBase * (1.0 / 100)) * 100) / 100.0;
 				break;
 		}
 	}
@@ -52,4 +52,3 @@ public class NoPerecedero extends Producto implements Serializable {
 		}
 	}
 }
-
