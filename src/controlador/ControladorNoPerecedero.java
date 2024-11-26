@@ -82,6 +82,7 @@ public class ControladorNoPerecedero implements ActionListener {
 			noPerecedero.setNombre(vista.textFNombre.getText());
 	        noPerecedero.setPrecioBase(Double.valueOf(vista.textFPrecio.getText()));
 	        noPerecedero.setCalidadProducto(Integer.valueOf((String) vista.comboBCalidadProducto.getSelectedItem()));
+	        noPerecedero.calcularPrecio();
 	        int index = modelo.buscarIndex(noPerecedero);
 			if (respuesta == JOptionPane.YES_OPTION) {
 				
@@ -97,5 +98,3 @@ public class ControladorNoPerecedero implements ActionListener {
 		}
 	}
 }
-
-
