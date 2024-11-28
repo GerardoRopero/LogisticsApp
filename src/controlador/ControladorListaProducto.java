@@ -30,12 +30,6 @@ public class ControladorListaProducto implements ActionListener {
 		if (e.getSource().equals(vista.btnConsultarProductos)) {
 			ArrayList<Perecedero> listaPerecedero = modeloP.readAll();
 			ArrayList<NoPerecedero> listaNoPerecedero = modeloN.readAll();
-
-			int filas = modeloT.getRowCount();
-			
-			for (int i = 0; i < filas; i++) {
-				modeloT.removeRow(0);
-			}
 			
 			for (Perecedero perecedero : listaPerecedero) {
 				perecedero.calcularPrecio();
