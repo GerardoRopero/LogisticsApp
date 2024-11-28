@@ -28,14 +28,7 @@ public class ControladorInforme implements ActionListener {
 		if (e.getSource().equals(vista.btnConsultarInformes)) {
 			ArrayList<Venta> listaVenta = modeloV.readAll();
 			
-			int filas = modeloT.getRowCount();
-			
-			for (int i = 0; i < filas; i++) {
-				modeloT.removeRow(0);
-			}
-			
 			for (Venta venta : listaVenta) {
-				
 				Object[] fila = {venta.getId(), venta.getFecha(), venta.getCliente().getId(), venta.getCliente().getNombre(), 
 						venta.getReduccion(), venta.getAumento(), venta.getTotalVenta()};
 				 modeloT.addRow(fila);
