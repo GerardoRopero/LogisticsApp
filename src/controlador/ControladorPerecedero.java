@@ -67,6 +67,7 @@ public class ControladorPerecedero implements ActionListener {
 		if (e.getSource().equals(vista.btnEliminar)) {
 			int respuesta = JOptionPane.showConfirmDialog(null, "Estás seguro de borrar?");
 			if (respuesta == JOptionPane.YES_OPTION) {
+				perecedero = modelo.read(Integer.valueOf(vista.textFId.getText()));
 				boolean borrado = modelo.delete(perecedero);
 				if (borrado) {
 					JOptionPane.showMessageDialog(null, "Perecedero borrado de los datos.");
@@ -80,6 +81,7 @@ public class ControladorPerecedero implements ActionListener {
 		
 		if (e.getSource().equals(vista.btnModificar)) {
 			int respuesta = JOptionPane.showConfirmDialog(null, "Estás seguro de modificar?");
+			perecedero.setId(Integer.valueOf(vista.textFId.getText()));
 			perecedero.setNombre(vista.textFNombre.getText());
 	        perecedero.setPrecioBase(Double.valueOf(vista.textFPrecio.getText()));
 	        perecedero.setDiasACaducar(Integer.valueOf((String) vista.comboBDiasACaducar.getSelectedItem()));
