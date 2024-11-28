@@ -79,11 +79,4 @@ public class NoPerecederoDAO {
 	public ArrayList<NoPerecedero> readAll() {
 		return listaNoPerecederos;
 	}
-	
-	public void reiniciarDatos() {
-	    listaNoPerecederos.clear();
-	    guardar(); 
-	}
 }
-
-
