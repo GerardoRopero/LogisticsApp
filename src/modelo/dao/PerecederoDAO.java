@@ -76,9 +76,4 @@ public class PerecederoDAO {
 	public ArrayList<Perecedero> readAll() {
 		return listaPerecederos;
 	}
-	
-	public void reiniciarDatosPerecedero() {
-	    listaPerecederos.clear(); 
-	    guardar();  
-	}
 }
