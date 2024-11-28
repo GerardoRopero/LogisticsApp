@@ -53,26 +53,6 @@ public class VistaInforme extends JFrame {
 		tableInforme = new JTable();
 		tableInforme.setModel(new DefaultTableModel(
 			new Object[][] {
-				{null, null, null, "", null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
 			},
 			new String[] {
 				"#FACTURA", "FECHA", "ID CLIENTE", "NOMBRE CLIENTE", "REDUCCION", "AUMENTO", "TOTAL VENTA"
@@ -92,4 +72,3 @@ public class VistaInforme extends JFrame {
 	}
 
 }
-
