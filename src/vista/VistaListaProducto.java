@@ -55,26 +55,6 @@ public class VistaListaProducto extends JFrame {
 		tableListaProductos = new JTable();
 		tableListaProductos.setModel(new DefaultTableModel(
 			new Object[][] {
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
 			},
 			new String[] {
 				"CODIGO", "NOMBRE", "PRECIO FINAL", "TIPO"
@@ -86,4 +66,3 @@ public class VistaListaProducto extends JFrame {
 		scrollPane.setViewportView(tableListaProductos);
 	}
 }
-
