@@ -53,32 +53,11 @@ public class VistaListaPerecedero extends JFrame {
 		tableListaPerecederos = new JTable();
 		tableListaPerecederos.setModel(new DefaultTableModel(
 			new Object[][] {
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
-				{null, null, null, null},
 			},
 			new String[] {
 				"CODIGO", "NOMBRE", "PRECIO FINAL", "DIAS CADUCA"
 			}
 		) {
-			
 			boolean[] columnEditables = new boolean[] {
 				false, false, false, false
 			};
