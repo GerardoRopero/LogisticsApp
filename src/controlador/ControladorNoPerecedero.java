@@ -79,13 +79,13 @@ public class ControladorNoPerecedero implements ActionListener {
 		
 		if (e.getSource().equals(vista.btnModificar)) {
 			int respuesta = JOptionPane.showConfirmDialog(null, "Estás seguro de modificar?");
+			noPerecedero.setId(Integer.valueOf(vista.textFId.getText()));
 			noPerecedero.setNombre(vista.textFNombre.getText());
 	        noPerecedero.setPrecioBase(Double.valueOf(vista.textFPrecio.getText()));
 	        noPerecedero.setCalidadProducto(Integer.valueOf((String) vista.comboBCalidadProducto.getSelectedItem()));
 	        noPerecedero.calcularPrecio();
 	        int index = modelo.buscarIndex(noPerecedero);
 			if (respuesta == JOptionPane.YES_OPTION) {
-				
 				modelo.update(index, noPerecedero);
 				JOptionPane.showMessageDialog(null, "Los datos del no perecedero fueron modificados");
 			}
