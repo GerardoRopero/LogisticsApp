@@ -28,18 +28,10 @@ public class ControladorListaPerecedero implements ActionListener {
 		if (e.getSource().equals(vista.btnConsultarPerecederos)) {
 			ArrayList<Perecedero> listaPerecedero = modeloP.readAll();
 			
-			int filas = modeloT.getRowCount();
-			
-			for (int i = 0; i < filas; i++) {
-				modeloT.removeRow(0);
-			}
-			
 			for (Perecedero perecedero : listaPerecedero) {
-				perecedero.calcularPrecio();
 				Object[] fila = {perecedero.getId(), perecedero.getNombre(), perecedero.getPrecioFinal(), perecedero.getDiasACaducar()};
 				modeloT.addRow(fila);
 			}
 		}
 	}
 }
-
